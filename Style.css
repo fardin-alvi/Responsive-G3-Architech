@@ -152,6 +152,38 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* feature card section title  */
+
+.architect-image{
+    height: 1440px ;
+    width: 1000px ;
+}
+.architect-image > img{
+    width: 100%;
+}
+
+
+.features{
+    gap: 100px;
+}
+.feature-card{
+    padding: 15px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.feature-card-title{
+    font-size: 1rem;
+    font-weight: 550;
+    margin: 0 auto;
+
+}
+
+#features-section-title{
+    border-left: 6px solid rgb(255, 144, 14);
+    padding-left: 15px;
+}
+
 
 @media screen and (max-width:576px) {
     .navbar , .nav-links , .teams{
