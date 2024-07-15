@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+ }
+
+
+/* shared styel */
+
+.display-flex{
+    display: flex;
+}
+
+/* dark-2  */
+.text-gray{
+    color: #424242;
+}
+/* dark-3  */
+.text-light-gray{
+    color: #727272;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+    border-radius: 7px;
+    background: rgb(255, 144, 14);
+    padding: 10px 15px;
+    font-size: 1.20rem;
+    font-weight: 600;
+    border-color: transparent;
+
+}
+main{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 100px;
+}
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.fact-card-center{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fact-number-font{
+    color: #424242;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 4px;
+    margin-bottom: 9px;
+    letter-spacing: 0%;
+}
+.fact-name-font{
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0%;
+}
+/* header style  */
+
+.navbar{
+    justify-content: space-between;
+
+}
+.nav-item{
+    list-style: none;
+    margin-right: 25px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar , .banner{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.banner-title-description{
+    font-size: 1rem;
+    letter-spacing:0%;
+    font-weight: 300;
+}
+.banner-content{
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px ;
+}
+.banner-image{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+/* team style  */
+
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 10px;
+}
+.feature{
+    margin: 200px 0 0 50px;
+}
+#Quick-list{
+    font-weight: 500;
+}
+#Features{
+    color: rgb(255, 144, 14);
+}
+.feature > .btn-primary{
+    margin-top: 15px;
+}
+
+/* some fact releted style  */
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.fact-card{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 7px;
+    width: 240px;
+    height: 240px;
+}
+.fact-description{
+    width: 539px;
+    margin-bottom: 50px;
+}
+/* sponser releted style  */
+
+.sponser-info{
+    max-width: 510px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponser-company{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    margin-top: 50px;
+}
+.sponser-company > img {
+    filter: grayscale(100%);
+}
+
+
+@media screen and (max-width:576px) {
+    .navbar , .nav-links , .teams{
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-image-container , .fact-container , .sponser-company{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .feature{
+        margin: 0;
+        text-align: center;
+    }
+    .fact-container{
+        justify-items: center;
+    }
+    .fact-description , .section-title{
+        width: auto;
+        text-align: center;
+    }
+    .sponser-company{
+        justify-content: center;
+        justify-items: center;
+        gap: 30px;
+    }
+        
+    
+
+}
+
+/* medium size device  */
+
+@media screen and (min-width: 577px ) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .team-image-container{
+        margin-left: 30px;
+        justify-items: center;
+    }
+    .feature{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .fact-container{
+        grid-template-columns: repeat(2 , 1fr);
+        width: 70%;
+        margin-left: 140px;
+        row-gap: 20px;
+    }
+    .section-title , .fact-description{
+        text-align: center;
+    }
+    .fact-description{
+        width: auto;
+    }
+    .sponser-company{
+        grid-template-columns: repeat(2 , 1fr);
+        align-content: center;
+        margin-left: 150px;
+        row-gap: 30px;
+    }
+}
