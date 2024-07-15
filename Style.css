@@ -154,14 +154,21 @@ main > section{
 
 /* feature card section title  */
 
-.architect-image{
+/* .architect-image{
     height: 1440px ;
     width: 1000px ;
+    margin-top: 40px;
 }
 .architect-image > img{
     width: 100%;
+} */
+.architect-image > img{
+    height: 700px;
+    margin-top: 35px;
 }
-
+.feature-content{
+    margin-bottom: 100px;
+}
 
 .features{
     gap: 100px;
@@ -183,10 +190,34 @@ main > section{
     border-left: 6px solid rgb(255, 144, 14);
     padding-left: 15px;
 }
+#experiance-batge{
+    padding: 17px 22px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0%;
+    margin-left: -80px;
+    margin-top: -70px;
+
+}
+.experiance-year{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+/* footer section  */
+
+.footer{
+    max-width: 1080px ;
+    border-radius: 8px;
+    background-color: rgb(255, 244, 231);
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto 0 auto;
+}
 
 
 @media screen and (max-width:576px) {
-    .navbar , .nav-links , .teams{
+    .navbar , .nav-links , .teams , .features{
         flex-direction: column;
         align-items: center;
     }
@@ -209,6 +240,14 @@ main > section{
         justify-items: center;
         gap: 30px;
     }
+    .architect-image > img{
+        width: 100%;
+        height: auto;
+    }
+    #experiance-batge{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
         
     
 
@@ -217,7 +256,7 @@ main > section{
 /* medium size device  */
 
 @media screen and (min-width: 577px ) and (max-width:992px) {
-    .teams{
+    .teams , .features{
         flex-direction: column;
     }
     .team-image-container{
@@ -245,5 +284,11 @@ main > section{
         align-content: center;
         margin-left: 150px;
         row-gap: 30px;
+    }
+    .architect-image{
+        margin-left: 180px;
+    }
+    .featue-content{
+        margin: 0 auto;
     }
 }
